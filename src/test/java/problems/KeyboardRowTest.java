@@ -17,8 +17,17 @@ public class KeyboardRowTest {
         String[] case1 = {"Hello", "Alaska", "Dad", "Peace"};
         String[] case2 = {"omk"};
         String[] case3 = {"adsdf","sfd"};
+
+        String[] answer1 = {"Alaska", "Dad"};
+
+        String[] answer3 = {"adsdf", "sfd"};
+        Assert.isTrue(Arrays.equals(answer1, findWords(case1)), "Should be true");
         log.info(Arrays.toString(findWords(case1)));
+
+        Assert.isTrue(Arrays.equals(new String[]{}, findWords(case2)), "Should be true");
         log.info(Arrays.toString(findWords(case2)));
+
+        Assert.isTrue(Arrays.equals(answer3, findWords(case3)), "Should be true");
         log.info(Arrays.toString(findWords(case3)));
     }
 
