@@ -5,12 +5,11 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 
 import static org.springframework.test.util.AssertionErrors.assertEquals;
-import static org.springframework.test.util.AssertionErrors.fail;
 
 public class IsValidParenthesesTest {
     @Test
     public void isValidParenthesesTest() {
-        String         s = "[]";
+        String s = "[]";
         assertEquals("Should be true", true, isValid1(s));
         s = "([])";
         assertEquals("Should be true", true, isValid1(s));
